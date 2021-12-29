@@ -47,7 +47,7 @@
 
 
 
-## For more refrenfe refer to Derek Kwok:
+## For more info refer to Derek Kwok blog:
 https://medium.com/@dkwok94/the-linking-process-exposed-static-vs-dynamic-libraries-977e92139b5f
 
 
