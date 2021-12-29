@@ -1,5 +1,4 @@
-# StaticDynamicLibraries
-## Creating Static Libraries:
+##Creating Static Libraries:
 
 1. Firstly compile all the source file as -
 	# gcc -c abc.c -o abc.o
@@ -14,7 +13,7 @@
 	A. You mush have static library(.a) file in PWD or its absolute path if not in PWD.
 	B. Now compile the application source file/s and get its object(.o) file/s.
 	C. Now link the .o file/s with the static library file(.a) using the cmd:
-		$ gcc <.o file/s> -o exe -L /absolute/path/of/the/library -l<library_name>
+		# gcc <.o file/s> -o exe -L /absolute/path/of/the/library -l<library_name>
 		# gcc application.o -o exe -L . -ldll
 		# ./exe (run)
 		where, -L is for path to the library &
@@ -22,7 +21,7 @@
 
 
 
-## Creating Dynamic Libraries:
+##Creating Dynamic Libraries:
 
 1. Firstly compile all the source file using -fPIC flag -
    *PIC - Position Independent Code
