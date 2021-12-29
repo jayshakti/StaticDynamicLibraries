@@ -25,7 +25,7 @@
 # Creating Dynamic Libraries:
 
 1. Firstly compile all the source file using -fPIC flag -
-   *PIC - Position Independent Code
+   * **PIC - Position Independent Code
 	# gcc -c fPIC abc.c -o abc.o
 	# gcc -c fPIC xyz.c -o xyz.o
 
@@ -47,6 +47,7 @@
 
 
 
-
+## For more refrenfe refer to Derek Kwok:
+https://medium.com/@dkwok94/the-linking-process-exposed-static-vs-dynamic-libraries-977e92139b5f
 
 
