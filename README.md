@@ -1,4 +1,4 @@
-## Creating Static Libraries:
+# Creating Static Libraries:
 
 1. Firstly compile all the source file as -
 	# gcc -c abc.c -o abc.o
@@ -18,10 +18,11 @@
 		# ./exe (run)
 		where, -L is for path to the library &
 		       -l is for linking the specified library
+		        . for PWD(present working directory)
 
 
 
-## Creating Dynamic Libraries:
+# Creating Dynamic Libraries:
 
 1. Firstly compile all the source file using -fPIC flag -
    *PIC - Position Independent Code
@@ -32,7 +33,10 @@
    	# gcc abc.o xyz.o -shared -o libdll.so
 
 3. Linking of the dynamic library into your application source file:
-	A. Place the "libdll.so" file at the default location(/usr/bin or /usr/local/bin) where all the dynamic libraries are kept.
+	A. Place the "libdll.so" file at the default location(/usr/bin or /usr/local/bin) where all the dynamic libraries are kept & load the configuration file using cmd:
+		# sudo ldconfig
+		This cmd will tell the OS that we have just added a shared library so please make a note of that.
+		
 	B. Now compile the application source file/s and get its object(.o) file/s.
 	C. Now link the .o file/s with the dynamic library file(.so) using the cmd:
 		# gcc application.o -o exe -ldll
