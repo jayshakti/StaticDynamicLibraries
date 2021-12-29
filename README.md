@@ -1,4 +1,4 @@
-##Creating Static Libraries:
+## Creating Static Libraries:
 
 1. Firstly compile all the source file as -
 	# gcc -c abc.c -o abc.o
@@ -21,7 +21,7 @@
 
 
 
-##Creating Dynamic Libraries:
+## Creating Dynamic Libraries:
 
 1. Firstly compile all the source file using -fPIC flag -
    *PIC - Position Independent Code
